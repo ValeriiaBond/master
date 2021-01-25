@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Мастер</title>
+  <link rel="stylesheet" href="css/owl.carousel.css">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<!-- -----------Навигация и бургер меню------------ -->
+<nav class="navbar navbar-default">
+  <div class="container-fluid menu_bar">
+    <div class="container">
+      <div class="pull-left">
+        <div class="navbar-header menu_bar_header">
+          <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#menu_bar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand hidden-lg logo_link" href="#"><img class="img-responsive" src="images/logo.png" alt="Мастер логотип"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="menu_bar">
+          <ul class="nav navbar-nav menu_bar_list">
+            <li class="menu_bar_item visible-xs-block">
+              <div class="input-group">
+                <input type="text" class="form-control search_area">
+                  <span class="input-group-btn">
+                  <button class="btn btn-default search_btn glyphicon glyphicon-search" type="button"></button>
+                  </span>
+              </div>
+            </li>
+            <li class="menu_bar_item"><a href="#" class="menu_bar_link">Доставка и оплата</a></li>
+            <li class="menu_bar_item"><a href="#" class="menu_bar_link">Сервис и гарантия</a></li>
+            <li class="menu_bar_item"><a href="#" class="menu_bar_link">Программа лояльности</a></li>
+            <li class="menu_bar_item"><a href="#" class="menu_bar_link">О нас</a></li>
+            <li class="menu_bar_item"><a href="#" class="menu_bar_link">Контакты</a></li> 
+            <li class="menu_bar_item visible-xs-block">
+              <div class="account col-xs-12">
+                <button type="button" class="btn log-in" data-toggle="modal" data-target="#log_in_btn">Вход</button>
+                <button type="button" class="btn sign-in" data-toggle="modal" data-target="#sign-in">Регистрация</button>
+              </div>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.pull left -->
+      <div class="account hidden-xs pull-right">
+        <button type="button" class="btn log-in" data-toggle="modal" data-target="#log_in_btn">Вход</button>
+        <button type="button" class="btn sign-in" data-toggle="modal" data-target="#sign-in">Регистрация</button>
+        <div class="modal fade" id="log_in_btn" tabindex="-1" role="dialog" aria-labelledby="label_log_in">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="label_log_in">Вход в личный кабинет</h4>
+              </div>
+              <div class="modal-body">
+                <form class="form-horizontal">
+                  <div class="form-group">
+                    <label for="inputEmail" class="col-sm-2 control-label">Email</label>
+                    <div class="col-sm-10">
+                      <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputPassword" class="col-sm-2 control-label">Password</label>
+                    <div class="col-sm-10">
+                      <input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Отмена</button>
+                <button type="button" class="btn btn-primary">Войти</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- /.pull right -->
+    </div>
+  </div>
+</nav>
+<div class="container header_bottom">
+  <div class="logo col-lg-3">
+    <img class="hidden-md visible-lg-inline-block" src="images/logo.png" alt="">
+  </div>
+  <div class="basket_menu visible-xs-block">
+    <button class="btn btn-default mark" type="submit">Закладки</button>
+    <button class="btn btn-default basket" type="submit">Корзина <span class="badge amount">0</span></button>
+  </div>
+  <div class="basket_menu pull-right hidden-xs">
+    <button class="btn btn-default mark" type="submit">Закладки</button>
+    <button class="btn btn-default basket" type="submit">Корзина <span class="badge amount">0</span></button>
+  </div>
+</div>
+  <!-- ----------поиск и контакты---------------- -->
+  <div class="container">
+    <div class="search hidden-xs col-sm-6 col-sm-offset-4">
+      <div class="input-group">
+        <input type="text" class="form-control search_area">
+        <span class="input-group-btn">
+        <button class="btn btn-default search_btn glyphicon glyphicon-search" type="button"></button>
+        </span>
+      </div><!-- /input-group -->
+    </div>
+    <div class="contacts pull-right hidden-xs">
+      <p>+38 (096) 569 93 22</p>
+      <p>+38 (096) 569 93 22</p>
+    </div>
+  </div>
+<!-- -------------Каталог товаров------------ -->
+<div class="container-fluid banner_block">
+  <div class="row">
+    <div class="owl-carousel banner_carousel">
+      <div class="item">
+        <img src="images/background/background_banner.jpg" alt="всё для салонов красоты">
+      </div>
+      <div class="item">
+        <img src="images/background/background_banner2.jpg" alt="маникюр">
+      </div>
+    </div>
+  </div>
+  <div class="container banner">
+    <div class="row">
+      <div class="dropdown catalog_dropdown col-xs-12 col-md-3">
+        <button class="btn btn-default dropdown-toggle btn_catalog" type="button" id="dropdown_catalog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Каталог товаров<span class="arrow"></span></button>
+        <ul class="dropdown-menu catalog_list col-sm-6 col-md-5 col-lg-3" aria-labelledby="dropdown_catalog">
+          <li class="catalog_item"><a href="#">Маникюрные педикюрные принадлежности</a></li>
+          <li class="catalog_item"><a href="#">Гель-лаки и наращивание ногтей</a></li>
+          <li class="catalog_item"><a href="#">Парикмахерские инструменты и техника</a></li>
+          <li class="catalog_item"><a href="#">Маникюрные педикюрные принадлежности</a></li>
+          <li class="catalog_item"><a href="#">Восковая депиляция и парафинотерапия</a></li>
+          <li class="catalog_item"><a href="#">Наращивание ресниц, краска для бровей и ресниц</a></li>
+          <li class="catalog_item"><a href="#">Спецодежда и одноразовые принадлежности</a></li>
+          <li class="catalog_item"><a href="#">Оборудование для салонов</a></li>
+          <li class="catalog_item"><a href="#">Стерилизация инструментов</a></li>
+        </ul>
+      </div>
+      <div class="col-xs-9 col-xs-offset-3 col-sm-6 col-sm-offset-6 col-md-4 col-md-offset-5 banner_description">
+        <div class="banner_description_content">
+          BСЕ ДЛЯ САЛОНОВ КРАСОТЫ
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- ----------Гарантии-------------- -->
+  <div class="container guarantee">
+    <div class="row">
+      <div class="col-md-4 col-xs-12">
+        <div class="guarantee_item">
+          <div class="guarantee_quality">
+            <div class="guarantee_item_content">
+                <h3>Гарантия Качества</h3>
+                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,  nec sagittis sem nibh id elit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-xs-12">
+        <div class="guarantee_item">
+          <div class="guarantee_service">
+            <div class="guarantee_item_content">
+              <h3>Гарантия сервиса</h3>
+              <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,  nec sagittis sem nibh id elit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-xs-12">
+        <div class="guarantee_item">
+          <div class="guarantee_success">
+            <div class="guarantee_item_content">
+              <h3>Гарантия успеха</h3>
+              <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,  nec sagittis sem nibh id elit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- -------------Акции--------------- -->
+  <div class="container promotion">
+    <div class="row">
+      <div class="col-sm-7 promotion_offer">
+        <div class="promotion_offer_content">
+          <div class="promotion_offer_description col-xs-9 col-lg-4">
+            <h4>акционное предложение</h4>
+            <p>Товары недели</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-5 promotion_discount">
+        <div class="promotion_discount_content">
+          <div class="promotion_discount_description col-xs-9 col-lg-7">
+            <h4><span>50%</span> скидки на всю косметику фирмы <span>Spa</span></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- -------------Хит продаж------------ -->
+<div class="container bestseller">
+  <h2>Хиты продаж</h2>
+  <div class="owl-carousel owl-theme carousel carousel_sale">
+    <div class="item">
+      <div class="bestseller_item">
+        <div class="bestseller_content">
+          <h4>Масло после депиляции с лавандой и витамином Е "DELICA"</h4>
+          <img src="images/products/oil.png" alt="масло" class="img-responsive"> 
+          <ul class="rating">
+            <li>&#9734;</li>
+            <li>&#9734;</li>
+            <li>&#9734;</li>
+            <li>&#9734;</li>
+            <li>&#9734;</li>
+          </ul>
+          <div class="price">
+            180грн <s>215грн</s>
+          </div>
+          <div class="purchase">
+            <div class="amount">
+              Кол-во <span class="badge amount_badge">1</span>
+              <button class="btn btn-default btn_purchase pull-right" type="submit">Купить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="bestseller_item">
+        <div class="bestseller_content">
+          <h4>Масло после депиляции с лавандой и витамином Е "DELICA"</h4>
+          <img src="images/products/scissors.png" alt="ножницы" class="img-responsive">
+          <ul class="rating">
+            <li>&#9734;</li>
+            <li>&#9734;</li>
+            <li>&#9734;</li>
+            <li>&#9734;</li>
+            <li>&#9734;</li>
+          </ul>
+          <div class="price">
+            180грн <s>215грн</s>
+          </div>
+          <div class="purchase">
+            <div class="amount">
+              Кол-во <span class="badge amount_badge">1</span>
+              <button class="btn btn-default btn_purchase pull-right" type="submit">Купить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="bestseller_item">
+        <div class="bestseller_content">
+          <h4>Масло после депиляции с лавандой и витамином Е "DELICA"</h4>
+          <img src="images/products/wax.png" alt="воск" class="img-responsive">
+          <ul class="rating">
+            <li>&#9734;</li>
+            <li>&#9734;</li>
+            <li>&#9734;</li>
+            <li>&#9734;</li>
+            <li>&#9734;</li>
+          </ul>
+          <div class="price">
+            180грн <s>215грн</s>
+          </div>
+          <div class="purchase">
+            <div class="amount">
+              Кол-во <span class="badge amount_badge">1</span>
+              <button class="btn btn-default btn_purchase pull-right" type="submit">Купить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="bestseller_item">
+        <div class="bestseller_content">
+          <h4>Масло после депиляции с лавандой и витамином Е "DELICA"</h4>
+          <img src="images/products/melter.png" alt="воскоплав" class="img-responsive">
+          <ul class="rating">
+            <li>&#9734;</li>
+            <li>&#9734;</li>
+            <li>&#9734;</li>
+            <li>&#9734;</li>
+            <li>&#9734;</li>
+          </ul>
+          <div class="price">
+            180грн <s>215грн</s>
+          </div>
+          <div class="purchase">
+            <div class="amount">
+              Кол-во <span class="badge amount_badge">1</span>
+              <button class="btn btn-default btn_purchase pull-right" type="submit">Купить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- -------------Новинки------------ -->
+<div class="container new">
+  <h2>Новинки</h2>
+  <div class="owl-carousel owl-theme carousel carousel_sale">
+    <div class="item">
+      <div class="new_item">
+        <div class="new_item_content">
+          <h4>Масло после депиляции с лавандой и витамином Е "DELICA"</h4>
+          <img src="images/products/oil.png" alt="масло" class="img-responsive"> 
+          <ul class="rating">
+            <li>&#9734;</li>
+            <li>&#9734;</li>
+            <li>&#9734;</li>
+            <li>&#9734;</li>
+            <li>&#9734;</li>
+          </ul>
+          <div class="price">
+            180грн <s>215грн</s>
+          </div>
+          <div class="purchase">
+            <div class="amount">
+              Кол-во <span class="badge amount_badge">1</span>
+              <button class="btn btn-default btn_purchase pull-right" type="submit">Купить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="new_item">
+        <div class="new_item_content">
+          <h4>Масло после депиляции с лавандой и витамином Е "DELICA"</h4>
+          <img src="images/products/scissors.png" alt="ножницы" class="img-responsive">
+          <ul class="rating">
+            <li>&#9734;</li>
+            <li>&#9734;</li>
+            <li>&#9734;</li>
+            <li>&#9734;</li>
+            <li>&#9734;</li>
+          </ul>
+          <div class="price">
+            180грн <s>215грн</s>
+          </div>
+          <div class="purchase">
+            <div class="amount">
+              Кол-во <span class="badge amount_badge">1</span>
+              <button class="btn btn-default btn_purchase pull-right" type="submit">Купить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="new_item">
+        <div class="new_item_content">
+          <h4>Масло после депиляции с лавандой и витамином Е "DELICA"</h4>
+          <img src="images/products/wax.png" alt="воск" class="img-responsive">
+          <ul class="rating">
+            <li>&#9734;</li>
+            <li>&#9734;</li>
+            <li>&#9734;</li>
+            <li>&#9734;</li>
+            <li>&#9734;</li>
+          </ul>
+          <div class="price">
+            180грн <s>215грн</s>
+          </div>
+          <div class="purchase">
+            <div class="amount">
+              Кол-во <span class="badge amount_badge">1</span>
+              <button class="btn btn-default btn_purchase pull-right" type="submit">Купить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="new_item">
+        <div class="new_item_content">
+          <h4>Масло после депиляции с лавандой и витамином Е "DELICA"</h4>
+          <img src="images/products/melter.png" alt="воскоплав" class="img-responsive">
+          <ul class="rating">
+            <li>&#9734;</li>
+            <li>&#9734;</li>
+            <li>&#9734;</li>
+            <li>&#9734;</li>
+            <li>&#9734;</li>
+          </ul>
+          <div class="price">
+            180грн <s>215грн</s>
+          </div>
+          <div class="purchase">
+            <div class="amount">
+              Кол-во <span class="badge amount_badge">1</span>
+              <button class="btn btn-default btn_purchase pull-right" type="submit">Купить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ---------------Отзывы------------ -->
+<div class="container-fluid feedback">
+  <div class="container">
+    <h2>отзывы</h2>
+    <div class="owl-carousel carousel_feedback">
+      <div class="item">
+        <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+        <p>Лилия Таран</p>
+      </div>
+      <div class="item">
+        <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor.</p>
+        <p>Лилия Таран</p>
+      </div>
+      <div class="item">
+        <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+        <p>Лилия Таран</p>
+      </div>
+      <div class="item">
+        <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+        <p>Лилия Таран</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ----------О компании-------------- -->
+
+<div class="container-fluid about_company">
+  <div class="container company_information">
+    <h2>О компании</h2>
+    <div class="col-xs-8 col-xs-offset-2">
+      <div class="owl-carousel carousel_about_company">
+        <div class="item">
+          <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+          <p>Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
+          <p>Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi.</p>
+          <p>Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
+        </div>
+        <div class="item">
+          <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+          <p>Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
+          <p>Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi.</p>
+          <p>Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
+        </div>  
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ------------Футер----------------- -->
+
+<footer>
+  <div class="container-fluid footer_block">
+    <div class="container footer_content">
+      <div class="col-sm-6 col-md-3 footer_menu">
+        <h3>Каталог Товаров</h3>
+        <ul class="footer_list">
+          <li><a href="#">Маникюр и педикюр</a></li>
+          <li><a href="#">Парикмахеское искусство</a></li>
+          <li><a href="#">Все для депиляции</a></li>
+          <li><a href="#">Ресницы</a></li>
+          <li><a href="#">Хна для росписи тела</a></li>
+          <li><a href="#">Оборудование</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-md-3 footer_menu">
+        <h3>Покупателям</h3>
+        <ul class="footer_list">
+          <li><a href="#">Доставка и опалата</a></li>
+          <li><a href="#">Сервис и гарантия</a></li>
+          <li><a href="#">Программа лояльности</a></li>
+          <li><a href="#">О нас</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="clearfix visible-sm-block"></div>
+      <div class="col-sm-6 col-md-3 footer_menu">
+        <h3>Контакты</h3>
+        <ul class="footer_list contacts_list">
+          <li class="location"><p>пр-т Гагарина 41/2, г.Харьков</p></li>
+          <li class="email">vfon@ukr.net</li>
+          <li class="phone">
+            <p>+380 (96) 569-93-22</p>
+            <p>+380 (63) 051-63-76</p>
+            <p>+380 (95) 800-49-95</p>    
+          </li>
+          <li class="schedule">
+            <p>Пн-пт  9:00-18:00</p>
+            <p>Сб    10:00-16:00</p>
+            <p>Вс       выходной</p>    
+          </li>
+        </ul>
+      </div>
+      <div class="col-xs-10 col-sm-6 col-md-3 footer_menu">
+        <h3>социальные сети</h3>
+        <ul class="footer_list social_media">
+          <li class="col-xs-3 vk"><a href="#"></a></li>
+          <li class="col-xs-3 instagram"><a href="#"></a></li>
+          <li class="col-xs-3 facebbok"><a href="#"></a></li>
+          <li class="col-xs-3 google"><a href="#"></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    © 2016  All rights reserved.
+  </div>
+</footer>
+<script>
+$(document).ready(function(){
+  
+  $('.banner_carousel').owlCarousel({
+    loop:true,
+    margin:0,
+    nav:false,
+    autoplay:true,
+    autoplayTimeout:5000,
+    smartSpeed:2000,
+    items:1,
+    animateOut: 'fadeOut',
+});
+
+  $('.carousel_sale').owlCarousel({
+    loop:true,
+    margin:15,
+    autoplay:true,
+    autoplayTimeout:3000,
+    smartSpeed:1000,
+    autoplayHoverPause:true,
+    nav:true,
+    dotsEach:1,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:3
+        },
+        1400:{
+            items:4
+        }
+    }
+  });
+  $('.carousel_feedback').owlCarousel({
+    loop:true,
+    margin:15,
+    smartSpeed:700,
+    nav:true,
+    navText: [
+  '<span class="arrow-owl arrow-left"></span>',
+  '<span class="arrow-owl arrow-right"></span>'
+],
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
+      }
+    });
+  $('.carousel_about_company').owlCarousel({
+    loop:true,
+    margin:15,
+    smartSpeed:700,
+    nav:true,
+    navText: [
+  '<span class="arrow-owl arrow-left"></span>',
+  '<span class="arrow-owl arrow-right"></span>'
+],
+    items:1,
+    });
+});
+
+</script>
+</body>
+</html>

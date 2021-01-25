@@ -1,0 +1,1060 @@
+@font-face {
+    font-family: 'gotic';
+    src: url('../fonts/gotic/fonts/GOTHIC.eot');
+    src: url('../fonts/gotic/fonts/GOTHIC.eot') format('embedded-opentype'),
+         url('../fonts/gotic/fonts/GOTHIC.woff2') format('woff2'),
+         url('../fonts/gotic/fonts/GOTHIC.woff') format('woff'),
+         url('../fonts/gotic/fonts/GOTHIC.ttf') format('truetype'),
+         url('../fonts/gotic/fonts/GOTHIC.svg#GOTHIC') format('svg');
+}
+
+@font-face {
+    font-family: 'gotic_itl';
+    src: url('../fonts/gotic_italic/fonts/GOTHICI.eot');
+    src: url('../fonts/gotic_italic/fonts/GOTHICI.eot') format('embedded-opentype'),
+         url('../fonts/gotic_italic/fonts/GOTHICI.woff2') format('woff2'),
+         url('../fonts/gotic_italic/fonts/GOTHICI.woff') format('woff'),
+         url('../fonts/gotic_italic/fonts/GOTHICI.ttf') format('truetype'),
+         url('../fonts/gotic_italic/fonts/GOTHICI.svg#GOTHICI') format('svg');
+}
+
+@font-face {
+    font-family: 'gotic_b';
+    src: url('../fonts/gotic_bold/fonts/GOTHICB.eot');
+    src: url('../fonts/gotic_bold/fonts/GOTHICB.eot') format('embedded-opentype'),
+         url('../fonts/gotic_bold/fonts/GOTHICB.woff2') format('woff2'),
+         url('../fonts/gotic_bold/fonts/GOTHICB.woff') format('woff'),
+         url('../fonts/gotic_bold/fonts/GOTHICB.ttf') format('truetype'),
+         url('../fonts/gotic_bold/fonts/GOTHICB.svg#GOTHICB') format('svg');
+}
+
+body{
+    font-family: 'gotic';
+}
+
+.mark:before, 
+.basket:before,
+.log-in:before, 
+.sign-in:before,
+.guarantee_quality:before,
+.guarantee_service:before,
+.guarantee_success:before,
+h3:after,
+h2:after,
+.bestseller>h2:before,
+.new>h2:before,
+.company_information>h2:before,
+.arrow-left,
+.arrow-right,
+.location:before,
+.email:before,
+.phone:before,
+.schedule:before,
+.vk a,
+.instagram a,
+.facebbok a,
+.google a,
+.vk:hover a,
+.instagram:hover a,
+.facebbok:hover a,
+.google:hover a{
+    content: '';
+    background: url(../images/icons/css_sprites_icons.png);
+    position: absolute;
+}
+
+h2, h3{
+    position: relative;
+    text-transform: uppercase;
+    color: #5b5da8;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+h2{
+    font-size: 36px;
+    margin-bottom: 50px;
+    z-index: 10;
+}
+
+
+/*----------------------Навигационная панель-------------------------*/
+
+.menu_bar{
+    background: #f5f2f8;
+}
+
+.menu_bar_list>.menu_bar_item>.menu_bar_link{
+    color: #5b5da8;
+    font-size: 14px;
+    padding-left: 0;
+    padding-right: 26px;
+}
+
+.logo_link{
+    padding: 0;
+}
+
+.logo_link img{
+    transform: scale(.8);
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border: none;
+}
+
+/*-------------------Войти и регистрация---------------------*/
+
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus{
+    outline: none;
+    outline-offset: 0px;
+}
+.btn.active, .btn:active {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .open>.dropdown-toggle.btn-default.focus, .open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.btn-default:hover, .btn-default.focus, .btn-default:focus, .btn-default.active, .btn-default:active, .open>.dropdown-toggle.btn-default {
+    background-color: transparent;
+    background-image: none;
+    border-color: transparent;
+}
+
+.log-in, .sign-in{
+    background: transparent;
+    border: none;
+    color: #5b5da8;
+    font-size: 12px;
+    margin-top: 24px;
+    margin-bottom: 19px;
+    padding: 0 0 0 21px;
+    position: relative;
+}
+
+.log_in_btn:hover, .log_in_btn:focus{
+    background: transparent;
+    border: none;
+}
+
+.log-in{
+    margin-right: 25px;
+}
+
+.log-in:before{
+    width: 15px; height: 16px;
+    background-position: -227px -73px;
+    top: 0;
+    left: 0;    
+}
+
+.sign-in:before{
+    width: 15px; height: 17px;
+    background-position: -227px -56px;
+    top: 0;
+    left: 0;    
+}
+
+/*-------------------Нижняя часть меню, логотип, корзина, закладки-------------------------*/
+
+.header_bottom{
+    margin-bottom: 65px;
+    margin-left: 20px;
+}
+
+.mark, .basket{
+    border: none;
+    color: #5b5da8;
+    padding-left: 42px;
+    padding-right: 0;
+    position: relative;
+}
+
+.mark{
+    margin-right: 26px;
+}
+
+.basket:before{
+    top: 0;
+    left: 0;
+    width: 35px; height: 33px;
+    background-position: -113px -163px;
+}
+
+.mark:before{
+    top: 0;
+    left: 0;
+    width: 37px; height: 33px;
+    background-position: -76px -163px;
+}
+
+.basket .amount{
+    border-radius: 50%;
+    color: #fff;
+    background: #ff5fb6;
+    padding: 6px 7px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateX(-50%);
+}
+
+.logo_link img{
+    width: 198px;
+}
+
+/*-------------------Поисковик-----------------------*/
+
+.search{
+    margin-bottom: 15px;
+}
+
+.search_area{
+    border: 1px solid #5b5da8;
+    border-radius: 11px;
+    height: 27px;
+}
+
+.search_btn{
+   border-radius: 11px; 
+   background: #ff5fb6;
+   border: none;
+   color: #fff;
+   height: 27px;
+   padding-top: 4px;
+   position: relative;
+   top: 0;
+
+}
+
+.search_btn:hover, .search_btn.focus, .search_btn:focus, .search_btn.active, .search_btn:active:focus{
+    background: #5b5da8;
+    color: #fff;
+}
+
+.form-control:focus {
+    border-color: #ff5fb6;
+    box-shadow: none;
+}
+
+/*---------------------Контакты----------------------*/
+
+.contacts{
+    font-size: 14px;
+    color: #ff5fb6;
+    font-family: 'gotic_b';
+}
+
+.contacts>p{
+    margin-bottom: 2px;
+    margin-top: -5px;
+}
+
+/*--------------------Каталог------------------------*/
+
+.banner_block{
+    position: relative;
+}
+
+.banner{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+}
+
+.banner_carousel img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.catalog_dropdown{
+    position: static;
+}
+
+.catalog_list{
+    position: absolute;
+    top: -3px;
+    left: -15px;
+    bottom: 0;
+    border: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: rgba(255,255,255,.9)
+}
+
+.catalog_list li{
+    margin-bottom: 10px;
+}
+
+.btn_catalog{
+    margin-top: -75px;
+    background: transparent;
+    text-transform: uppercase;
+    color: #5b5da8;
+    font-size: 18px;
+    font-family: 'gotic_b';
+    border: none;
+    position: relative;
+    padding-right: 27px;
+}
+
+.btn-default.dropdown-toggle.btn_catalog:active,
+.btn-default.dropdown-toggle.btn_catalog:focus,
+.btn-default.dropdown-toggle.btn_catalog:hover,
+.btn-default.dropdown-toggle.btn_catalog:active:hover, 
+.btn-default.dropdown-toggle.btn_catalog:active:focus{
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: none;
+    color: #5b5da8; 
+    border: none;
+    outline: none;
+}
+
+.catalog_list .catalog_item>a{
+    white-space: pre-wrap;
+    color: #5b5da8;
+}
+
+.arrow{
+    border: solid #5b5da8;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    position: absolute;
+    bottom: 15px;
+    right: 0;
+}
+
+.banner_description{
+    text-transform: uppercase;
+    color: #fff;
+    text-align: right;
+    position: relative;
+    z-index: 5;
+    font-size: 20px;
+    margin-top: 140px;
+    margin-bottom: 50px;
+}
+
+.banner_description_content{
+    border: 15px solid rgba(255, 231, 244, .5);
+    padding: 10px 5px 10px 42px;
+}
+
+.banner_block:before{
+    width: 50vw;
+    background: rgba(185, 146, 217, .5);
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 30% 0 0 30% / 45% 0 0 45%;
+    z-index: 5;
+}
+
+
+/*------------------------Гарантии-----------------------*/
+
+.guarantee{
+    margin-top: 65px;
+    margin-bottom: 30px;
+}
+
+.guarantee_item{
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.guarantee_quality{
+    background: #f7f7f7;
+}
+
+.guarantee_service{
+    background: #faf7f5;
+}
+
+.guarantee_success{
+    background: #f2f2f8;
+}
+
+.guarantee_item_content{
+    padding: 15px;
+}
+
+.guarantee_item_content>h3,.guarantee_item_content>p {
+    background: #fff;
+    margin: 0;
+}
+
+.guarantee h3{
+    font-size: 24px;
+    text-align: center;
+    padding-top: 40px;
+}
+.guarantee p{
+    color: #868686;;
+    font-size: 14px;
+    padding: 10px 25px 0;
+    text-align: justify;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+h3:after, h2:after{
+    width: 224px; height: 6px;
+    background-position: -0 -204px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.guarantee_quality:before{
+    z-index: 5;
+    background-position: -0 -60px;
+    width: 62px; height: 62px;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.guarantee_service:before{
+    z-index: 5;
+    width: 36px; height: 56px;
+    background-position: -128px -42px;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.guarantee_success:before{
+    z-index: 5;
+    width: 62px; height: 60px;
+    background-position: -66px -61px;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*----------------Акции--------------------*/
+
+.promotion{
+    margin-bottom: 80px;
+}
+
+.promotion_offer{
+    margin-bottom: 10px;
+}
+
+.promotion_offer_content, .promotion_discount_content{
+    background-size: 100%;
+    min-height: 260px; 
+    position: relative;  
+}
+
+.promotion_offer_content{
+    background: no-repeat url(../images/background/promotion_offer.svg);
+    background-size: cover;
+
+}
+
+.promotion_discount_content{
+    background: no-repeat url(../images/background/promotion_offer_2.jpg);
+    background-size: cover;
+}
+
+.promotion_offer_description{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background: #c5b3d8;
+    color: #fff;
+    padding: 29px 0 24px 17px;
+}
+
+.promotion_offer_description>h4{
+    text-transform: uppercase;
+    font-size: 24px;
+    font-family: 'gotic_b';
+    margin-bottom: 0;
+}
+
+.promotion_offer_description>p{
+    font-size: 12px;
+}
+
+.promotion_discount_description{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    padding: 16px 0 16px 15px;
+}
+
+.promotion_discount_description>h4{
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 22px;
+    background: rgba(255, 255, 255, .8);
+    padding: 16px 9px 16px 2px;
+
+}
+
+.promotion_discount_description>h4>span{
+    font-family: 'gotic_b';
+    font-size: 64px;
+
+}
+
+.promotion_discount_description>h4>span+span{
+    font-size: 24px;
+
+}
+
+/*-------------Хит продаж---------------*/
+
+.bestseller, .new{
+    margin-bottom: 40px;
+}
+
+.bestseller>h2:before{
+    width: 66px; height: 60px;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.new>h2:before{
+    width: 62px; height: 61px;
+    background-position: -66px -0;
+    top: -23px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.bestseller>h2{
+    z-index: 10;
+}
+
+.bestseller_content, .new_item_content{
+    border: 15px solid #fafafa;
+}
+
+.bestseller_content>h4, .new_item_content>h4{
+    color: #5b5da8;
+    font-family: 'gotic_b';
+    font-size: 14px;
+    text-align: center;
+}
+
+.bestseller_item .bestseller_content img, .new_item_content>img{
+    margin: 0 auto;
+    max-width: 100%;
+    height: 155px;
+}
+
+
+.rating{
+    margin-top: 10px;
+    margin-bottom: 33px;
+    font-size: 0;
+    text-align: center;
+    list-style: none;
+    padding-left: 0;
+    color: #ff5fb6;
+}
+
+.rating>li{
+    display: inline-block;
+    font-size: 18px;
+}
+
+.price{
+    text-align: center;
+    color: #ff5fb6;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.price>s{
+    font-size: 14px;
+    color: #5b5da8;
+    padding-left: 15px;
+}
+
+.amount{
+    color: #5b5da8;
+    font-size: 14px;
+    padding: 0 18px;
+    margin-bottom: 33px;
+    vertical-align: middle;
+}
+
+.amount_badge{
+    border-radius: 50%;
+    font-size: 14px;
+    min-width: 31px;
+    min-height: 31px;
+    padding-top: 8px;
+    background: transparent;
+    color: #5b5da8;
+    border: 1px solid #5b5da8;
+
+}
+
+.btn_purchase{
+    background: #ff5fb6;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px;
+}
+
+/*--------------Отзывы--------------*/
+
+.feedback{
+    background: #c5b3d8;
+    min-height: 200px;
+    padding-top: 80px;
+    padding-bottom: 115px;
+    color: #fff;
+}
+
+.feedback h2{
+    color: #fff;
+    margin-bottom: 35px;
+}
+
+.feedback p{
+    font-family: 'gotic_itl';
+}
+
+.feedback p:last-child{
+    font-family: 'gotic_b'; 
+}
+.feedback .item{
+    margin-bottom: 34px;
+    padding-top: 15px;
+    position: relative;
+}
+
+.feedback .item:before{
+    content: '';
+    width: 165px;
+    height: 121px;
+    border: 15px solid rgba(255, 255, 255, .13);
+    position: absolute;
+    top: 0;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.owl-nav{
+    height: 0;
+}
+
+.owl-dots{
+    display: none;
+}
+.arrow-left{
+    width: 35px; height: 35px;
+    background-position: -186px -123px;
+    right: calc(50% + 15px);
+    top: 100%;
+}
+
+.arrow-right{
+    width: 35px; height: 35px;
+    background-position: -41px -163px;   
+    left: calc(50% + 15px);
+    top: 100%;
+}
+
+
+/*--------------О компании----------------*/
+
+.about_company{
+    padding-top: 70px;
+    padding-bottom: 130px;
+    background: url(../images/background/Sea_Salt_Bowl.jpg) no-repeat 0 110%;
+}
+
+.about_company p{
+    color: #707070;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.company_information>h2:before{
+    width: 58px; height: 42px;
+    background-position: -128px -0;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.carousel_about_company .arrow-left{
+    top: 50%;
+    right: calc(100% + 30px);
+    transform: translateY(-50%);
+}
+
+.carousel_about_company .arrow-right{
+    top: 50%;
+    left: calc(100% + 30px);
+    transform: translateY(-50%);
+}
+
+.carousel_about_company .owl-nav{
+    height: 0;
+}
+
+.carousel_sale.owl-carousel .owl-dots{
+    display: inline-block;
+    margin-top: 25px;
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+}
+
+.carousel_sale.owl-carousel button.owl-dot{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #5b5da8;
+    margin-right: 10px;
+}
+
+.carousel_sale.owl-carousel button.owl-dot:last-child{
+    margin-right: 0;
+}
+
+.carousel_sale.owl-carousel button.owl-dot.active {
+    background: #5b5da8;
+}
+
+button.owl-dot:focus,
+button.owl-dot.active:focus{
+    outline: none;
+}
+
+.carousel_sale.owl-carousel .owl-nav{
+    display: none;
+}
+
+/*-----------Футер-----------*/
+
+.footer_block{
+    background: #765598;
+    color: #fff;
+    padding-top: 40px;
+    padding-bottom: 70px;
+}
+
+.footer_content h3{
+    color: #fff;
+    font-size: 18px;
+    text-align: left;
+}
+
+.footer_content h3:after{
+    left: 0;
+    transform: translateX(0);
+}
+
+.footer_list>li{
+    list-style-type: none;
+    padding-bottom: 20px;
+}
+
+.footer_list>li>a{
+    color: #fff;
+}
+
+.footer_list>li>a:hover, .footer_list>li>a:focus{
+    color: #ff5fb6;
+    text-decoration: none;
+}
+
+.footer_list{
+    padding-top: 20px;
+    padding-left: 0;
+}
+
+.contacts_list>li{
+    padding-left: 60px;
+    position: relative;
+}
+
+.contacts_list>li>p{
+    margin: 0;
+}
+
+.contacts_list>li>p>span{
+    text-align: right;
+}
+
+.location:before,
+.email:before,
+.phone:before,
+.schedule:before{
+    top: 5px;
+    left: 7px;
+}
+
+.location:before{
+    width: 21px; height: 31px;
+    background-position: -227px -25px;
+}
+
+.email:before{
+    width: 27px; height: 25px;
+    background-position: -227px -0;
+    top: 0;
+    left: 0;
+}
+
+.phone:before{
+    width: 30px; height: 32px;
+    background-position: -148px -163px;
+    top: 5px;
+}
+
+.schedule:before{
+    width: 30px; height: 30px;
+    background-position: -178px -163px;
+    top: 5px;
+}
+
+.social_media{
+    padding-left: 0;
+}
+
+.social_media>li{
+    position: relative;
+}
+
+.social_media a{
+    display: block;
+    width: 41px;
+    height: 41px;
+    left: 0;
+}
+
+.vk a{
+    background-position: -0 -163px;
+}
+
+.instagram a{
+   background-position: -82px -122px;
+}
+
+.facebbok a{
+    background-position: -0 -122px;
+}
+
+.google a{
+    background-position: -41px -122px;
+}
+
+.vk:hover a{
+    background-position: -123px -122px;
+}
+
+.instagram:hover a{
+   background-position: -186px -82px;
+}
+
+.facebbok:hover a{
+    background-position: -186px -0;
+}
+
+.google:hover a{
+    background-position: -186px -41px;
+}
+
+.copyright{
+    background: #fff;
+    color: #765598;
+    text-align: center;
+    padding-top: 22px;
+    padding-bottom: 17px;
+}
+
+
+/*----------------------------------Для xxs c 576---------------------------------*/
+
+@media (min-width: 576px){
+
+.catalog_list li{
+    margin-bottom: 15px;
+}
+
+}
+
+/*----------------------------------Для xs c 768---------------------------------*/
+
+@media (min-width: 768px){
+
+.header_bottom{
+    margin-bottom: 30px;
+    margin-left: auto;
+}
+
+.banner{
+    left: 50%;
+    transform: translateX(-50%);  
+}
+
+
+.banner_block:before {
+    width: calc(50vw - 167px);
+}
+
+.catalog_list {
+    left: 0;
+}
+
+.banner_description{
+    font-size: 28px;
+    margin-top: 115px;
+    margin-bottom: 60px;
+    padding: 37px 15px 36px 87px;
+}
+
+.contacts>p{
+    font-size: 12px;
+}
+
+}
+
+/*----------------------------------Для sm c 992---------------------------------*/
+
+@media (min-width: 992px){
+
+.contacts>p{
+    font-size: 14px;
+}
+
+.banner_block:before {
+    width: calc(50vw - 290px);
+}
+
+.banner_carousel img{
+    width: 100%;
+    height: 529px;
+    object-fit: cover;
+}
+
+.banner_description {
+    font-size: 32px;
+    margin-top: 145px;
+    margin-bottom: 77px;
+    padding: 5px 5px 5px 5px;
+}
+
+.guarantee p{
+    padding-bottom: 67px;
+}
+
+.about_company{
+    background: url(../images/background/Sea_Salt_Bowl.jpg) no-repeat 0 100%, url(../images/background/vase.jpg) no-repeat 100% 30%;
+}
+
+}
+
+
+/*----------------------------------Для lg более 1200------------------------------*/
+
+@media (min-width: 1200px){
+
+.banner_block:before {
+    width: calc(50vw - 290px);
+}
+
+.guarantee_quality:before {
+    left: 15px;
+    transform: translateX(50%);
+}
+
+.guarantee_service:before {
+    left: 26px;
+    transform: translateX(50%);
+}
+
+.guarantee_success:before {
+    left: 21px;
+    transform: translateX(50%);
+}
+
+.bestseller, .new{
+    margin-bottom: 80px;
+}
+
+.banner_description{
+    margin-top: 100px;
+    margin-bottom: 118px;
+    font-size: 42px;
+}
+
+.banner_description_content{
+    padding: 45px 15px 45px 0;
+}
+
+.guarantee{
+    margin-top: 90px;
+}
+
+}
+
+/*--------------------------Изменение брейкпоинтов----------------------------*/
+
+@media (max-width: 1199px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+}
